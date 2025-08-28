@@ -22,4 +22,6 @@ console.log('Array combine by concat methode:', combinationOfArray);
 console.log('Array combine by spread operator methode:', combine2Array);
 
 
-// 3.
+// 3.Generate randome number between 0 to 18
+let randomNumber = Math.floor(Math.random()*19);
+console.log('Random Number between 0 to 18:' ,randomNumber);
