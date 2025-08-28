@@ -39,3 +39,13 @@ let resultArray = arr.filter(ele=>{
     // or,
     return typeof Array === 'string';
 })
+
+// 5. Write a function that retutns the lengthe of the given object (Keys of an object)
+let obj = {
+    name:'neha',
+    age:23,
+    bloodGroup: 'o+',
+    Dob: '23/08/2002' 
+}
+
+console.log('Length of keys of Object:',Object.keys(obj).length);
