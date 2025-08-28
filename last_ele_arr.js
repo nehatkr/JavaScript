@@ -25,3 +25,17 @@ console.log('Array combine by spread operator methode:', combine2Array);
 // 3.Generate randome number between 0 to 18
 let randomNumber = Math.floor(Math.random()*19);
 console.log('Random Number between 0 to 18:' ,randomNumber);
+
+
+// 4.Create a function that takes an array containing both number and string, and return a new array containing only the string values.
+let Array = [1,2,4,5,'a','e','r',67];
+let resultArray = arr.filter(ele=>{
+    // if (typeof Array === 'string') {
+    //     return true;
+    // }else{
+    //     return false;
+    // }
+
+    // or,
+    return typeof Array === 'string';
+})
