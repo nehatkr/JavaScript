@@ -28,5 +28,5 @@ function squar(){
     return 4*4;
     
 }
-let sum = (sum(),squar())
-console.log(sum);
+let sum1 = (sum(),squar())
+console.log(sum1);

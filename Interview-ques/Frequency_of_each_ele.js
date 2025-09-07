@@ -7,3 +7,5 @@ arr.forEach(item => {
 
 console.log(freq); 
 // { a: 3, b: 2, c: 1 }
+
+
