@@ -13,3 +13,33 @@ for (let i = 0; i < arr.length; i++) {
 console.log(ans);
 console.log(isNaN("neha"))
 console.log(Boolean("neha"))
+
+// Question 3
+let str1 = 'Neha';
+let str2 = 'Thakur';
+let answer = "";
+n = str1.length;
+m = str2.length;
+
+let i= 0, j=0;
+while (i <n && j<m) {
+    answer += str1[i];
+    answer += str2[j];
+    i++;
+    j++;
+
+}
+
+if (i==n) {
+    while(j<m){
+        answer += str2[j];
+        j++;
+    }
+}
+if (j==m) {
+    while(i<n){
+        answer += str1[i];
+        i++;
+    }
+}
+console.log(answer);
