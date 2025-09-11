@@ -12,11 +12,23 @@
 
 
 // without space
-let str = "Javascript is amazing";
+// let str = "Javascript is amazing";
 
-let charCount = {}
-for(let char of str){
-    if (char == " ")continue; 
-    charCount[char] = (charCount[char] || 0) + 1
+// let charCount = {}
+// for(let char of str){
+//     if (char == " ")continue; 
+//     charCount[char] = (charCount[char] || 0) + 1
+// }
+// console.log(charCount)
+
+
+const obj = {
+    name : 'Neha',
+    abc : {
+        name : 'thakur',
+        experence : '6 months'
+    }
 }
-console.log(charCount)
+const obj2 = {...obj}
+obj2.abc.name = 'developer'
+console.log(obj2.abc.name)
