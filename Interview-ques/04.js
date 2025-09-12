@@ -22,13 +22,25 @@
 // console.log(charCount)
 
 
-const obj = {
-    name : 'Neha',
-    abc : {
-        name : 'thakur',
-        experence : '6 months'
-    }
+// const obj = {
+//     name : 'Neha',
+//     abc : {
+//         name : 'thakur',
+//         experence : '6 months'
+//     }
+// }
+// const obj2 = {...obj}
+// obj2.abc.name = 'developer'
+// console.log(obj2.abc.name)
+
+
+const obj1= {}, obj2={
+    name: "Neha"
+},obj3= {
+    name : "rishika"
 }
-const obj2 = {...obj}
-obj2.abc.name = 'developer'
-console.log(obj2.abc.name)
+
+obj1[obj2] = {name:"shweta"}
+obj1[obj3] = {name:"Rahul"}
+
+console.log(obj1[obj2])
