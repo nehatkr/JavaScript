@@ -50,11 +50,11 @@ const array = [[0,1],["Neha", "Thakur"],[3,4]];
 function flatten(array){
     let flat = [];
     for(let i = 0; i<array.length; i++){
-        let val = arr[i];
+        let val = array[i];
         if(Array.isArray(val)){
             flat = flat.concat(flatten(val))
         }else{
-            flat.puch(val)
+            flat.push(val)
         }
     }
     return flat;
