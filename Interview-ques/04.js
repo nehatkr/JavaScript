@@ -34,13 +34,29 @@
 // console.log(obj2.abc.name)
 
 
-const obj1= {}, obj2={
-    name: "Neha"
-},obj3= {
-    name : "rishika"
-}
+// const obj1= {}, obj2={
+//     name: "Neha"
+// },obj3= {
+//     name : "rishika"
+// }
 
-obj1[obj2] = {name:"shweta"}
-obj1[obj3] = {name:"Rahul"}
+// obj1[obj2] = {name:"shweta"}
+// obj1[obj3] = {name:"Rahul"}
 
-console.log(obj1[obj2])
+// console.log(obj1[obj2]) //it will take the latest value
+
+//flatten the array
+const array = [[0,1],["Neha", "Thakur"],[3,4]];
+function flatten(array){
+    let flat = [];
+    for(let i = 0; i<array.length; i++){
+        let val = arr[i];
+        if(Array.isArray(val)){
+            flat = flat.concat(flatten(val))
+        }else{
+            flat.puch(val)
+        }
+    }
+    return flat;
+} 
+console.log(flatten(array))
