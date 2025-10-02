@@ -10,3 +10,11 @@ console.log(name, s1);
 let a = 10, b = 20;
 [a, b] = [b, a];
 console.log(a, b);
+
+// q3
+const obj1 = { 
+  id: 1, 
+  details: { name1: "Neha", skills: ["JS", "React"] }
+};
+const { details: { name1, skills: [s0] } } = obj1;
+console.log(name2, s0);
